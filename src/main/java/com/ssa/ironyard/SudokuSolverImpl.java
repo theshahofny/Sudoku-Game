@@ -18,7 +18,7 @@ public class SudokuSolverImpl implements SudokuSolver {
 	    candidates.add(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9)));
     }
 
-    public int[] solve() {
+    public String solve() {
 	// while (!isSolved()) {
 	for (int row = 0; row < 9; row++)
 	    for (int column = 0; column < 9; column++)
@@ -27,7 +27,7 @@ public class SudokuSolverImpl implements SudokuSolver {
 	setKnownValuesFromCandidates();
 	// }
 
-	return sudokuArray;
+	return null;
     }
 
     private int getIndex(int row, int column) {

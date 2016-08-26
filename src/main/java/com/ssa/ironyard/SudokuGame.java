@@ -17,6 +17,21 @@ public class SudokuGame{
 	
 	this.solution = new SudokuSolverImpl(this).solve();
     }
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public int[] getGame() {
+        return game;
+    }
+
+    public int[] getSolution() {
+        return solution;
+    }
     
 }
